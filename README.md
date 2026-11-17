@@ -12,10 +12,10 @@ facts table per portion, allergen warnings and an estimated recipe.
 
 | Name | Student No | Role |
 |------|-----------|------|
-| _Name Surname_ | _No_ | Development (scraper / automation) |
-| _Name Surname_ | _No_ | Dish database, nutrition (TürKomp) |
-| _Name Surname_ | _No_ | Photos & interface design |
-| _Name Surname_ | _No_ | Testing, survey, report & video |
+| Özlem Yılmaz | _No_ | Development (scraper / automation) |
+| Vahdet Can Şahiner  | _No_ | Dish database, nutrition (TürKomp) |
+| Atahan Arslan | _No_ | Photos & interface design |
+
 
 ## How it works
 
