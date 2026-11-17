@@ -1,0 +1,5 @@
+{
+  "menu_url": "https://REPLACE-WITH-CAFETERIA-MENU-URL",
+  "dish_database": "dishes.json",
+  "output": "index.html"
+}

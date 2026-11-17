@@ -1,0 +1,29 @@
+{
+  "mercimek çorbası": {
+    "name": "Mercimek Çorbası (Red Lentil Soup)",
+    "photo": "photos/mercimek-corbasi.jpg",
+    "ingredients": ["red lentils", "onion", "carrot", "potato", "butter", "flour", "salt", "cumin"],
+    "labels": ["vegetarian"],
+    "allergens": ["gluten", "milk"],
+    "nutrition_per_portion": {"portion_g": 250, "energy_kcal": 165, "protein_g": 8.5, "carbohydrate_g": 24.0, "fat_g": 4.0, "fiber_g": 4.5, "salt_g": 1.1},
+    "recipe": "Sauté onion in butter, add flour, then lentils, carrot, potato and water. Boil 30 min, blend, season with salt and cumin."
+  },
+  "kuru fasulye": {
+    "name": "Kuru Fasulye (White Bean Stew)",
+    "photo": "photos/kuru-fasulye.jpg",
+    "ingredients": ["dried white beans", "onion", "tomato paste", "olive oil", "salt", "pepper"],
+    "labels": ["vegan", "vegetarian", "gluten-free"],
+    "allergens": [],
+    "nutrition_per_portion": {"portion_g": 250, "energy_kcal": 240, "protein_g": 13.0, "carbohydrate_g": 35.0, "fat_g": 6.0, "fiber_g": 11.0, "salt_g": 1.2},
+    "recipe": "Soak beans overnight. Sauté onion in oil, add tomato paste, beans and water. Simmer 60–90 min until soft."
+  },
+  "pirinç pilavı": {
+    "name": "Pirinç Pilavı (Rice Pilaf)",
+    "photo": "photos/pirinc-pilavi.jpg",
+    "ingredients": ["rice", "butter", "orzo", "water", "salt"],
+    "labels": ["vegetarian"],
+    "allergens": ["gluten", "milk"],
+    "nutrition_per_portion": {"portion_g": 150, "energy_kcal": 230, "protein_g": 4.0, "carbohydrate_g": 42.0, "fat_g": 5.0, "fiber_g": 0.6, "salt_g": 0.8},
+    "recipe": "Brown orzo in butter, add washed rice, stir, add hot water and salt. Cook on low heat 15 min, rest 10 min."
+  }
+}
