@@ -5,7 +5,7 @@
 
 🌐 **Live website:** https://ataking007.github.io/smart-meal-guide/
 
-A digital guide for a staff/student cafeteria. The daily/weekly menu is pulled
+A digital guide for the **Antalya Bilim Üniversitesi staff cafeteria (Personel Yemekhanesi)**. The daily/weekly menu is pulled
 automatically from the institution's website, and every dish is enriched with a
 photo, ingredients, dietary labels (vegan / vegetarian / gluten-free), a nutrition
 facts table per portion, allergen warnings and an estimated recipe.
@@ -21,7 +21,7 @@ facts table per portion, allergen warnings and an estimated recipe.
 ## How it works
 
 ```
-Cafeteria website ──► scraper.py ──► enrich.py ──► build_site.py ──► index.html
+University website (menu PDF) ──► scraper.py ──► enrich.py ──► build_site.py ──► index.html
                                       ▲
                        dishes.json (dish database:
                        photo, ingredients, labels, nutrition, allergens, recipe)
@@ -31,27 +31,29 @@ Cafeteria website ──► scraper.py ──► enrich.py ──► build_site.
    URL in `config.json` and extracts the dishes per day (no manual entry).
 2. **Enrichment** – `enrich.py` matches every dish name with `dishes.json`.
    Dishes not yet in the database are **flagged for completion** (`missing_dishes.json`).
-3. **Output** – `build_site.py` generates the guide as a web page (`index.html`).
+3. **Output** – `build_site.py` generates the website (`index.html`), published with GitHub Pages.
+4. **Full automation** – a GitHub Actions workflow (`.github/workflows/update-menu.yml`) runs the
+   pipeline every weekday morning, so a new menu appears on the website automatically.
 
 ## Requirements checklist
 
 | Requirement | Status |
 |---|---|
-| Automated menu retrieval from website | 🟡 Working on sample week menu, real cafeteria URL to be connected |
+| Automated menu retrieval from website | 🟢 Reads the university menu PDF (tested with the 27–31.07.2026 menu) |
 | Photo library (2 weeks of dishes) | 🔴 Photographing starts this week |
-| Ingredients for each dish | 🟡 16 dishes done |
+| Ingredients for each dish | 🟢 All dishes of the current menu |
 | Dietary labels (vegan / vegetarian / gluten-free) | 🟢 Implemented, with filters on the website |
-| Calories + nutrition table per portion (TürKomp) | 🟡 16 dishes done (estimates, being checked with TürKomp) |
+| Calories + nutrition table per portion (TürKomp) | 🟢 All dishes of the current menu (estimates, being checked with TürKomp) |
 | Allergen warnings | 🟢 Implemented |
-| Estimated recipe | 🟡 16 dishes done |
-| Full automation + flagging new dishes | 🟢 Implemented (prototype) |
+| Estimated recipe | 🟢 All dishes of the current menu |
+| Full automation + flagging new dishes | 🟢 Daily GitHub Actions update, unknown dishes flagged |
 
 ## Run it
 
 ```bash
 pip install -r requirements.txt
 python main.py            # uses the URL in config.json
-python main.py --sample   # offline demo with sample_menu.html
+python main.py --sample   # uses the test copy sample_menu.pdf
 ```
 This regenerates `index.html`, the website published with GitHub Pages.
 
@@ -60,13 +62,14 @@ This regenerates `index.html`, the website published with GitHub Pages.
 | File | Purpose |
 |---|---|
 | `main.py` | runs the whole pipeline |
-| `scraper.py` | automated menu retrieval |
+| `scraper.py` | downloads and reads the menu PDF |
 | `enrich.py` | matches dishes with the database, flags missing ones |
 | `build_site.py` | generates the website (`index.html`) |
 | `index.html` | the website (GitHub Pages) |
 | `dishes.json` | dish database |
-| `sample_menu.html` | sample menu page for testing |
-| `config.json` | cafeteria menu URL |
+| `sample_menu.pdf` | test copy of the cafeteria menu (27–31.07.2026) |
+| `config.json` | cafeteria name and menu URL |
+| `.github/workflows/update-menu.yml` | automatic daily update |
 | `DRAFT_REPORT.md` | draft report / plan |
 
 Dish photos will be added in a `photos/` folder.

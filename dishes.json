@@ -301,36 +301,35 @@
   },
   "pirinç pilavı": {
     "name": "Pirinç Pilavı (Rice Pilaf)",
-    "category": "Side",
+    "category": "Rice / Pasta",
     "photo": "photos/pirinc-pilavi.jpg",
     "ingredients": [
       "rice",
       "butter",
-      "orzo",
       "water",
       "salt"
     ],
     "labels": [
-      "vegetarian"
+      "vegetarian",
+      "gluten-free"
     ],
     "allergens": [
-      "gluten",
       "milk"
     ],
     "nutrition_per_portion": {
       "portion_g": 150,
-      "energy_kcal": 230,
+      "energy_kcal": 220,
       "protein_g": 4,
-      "carbohydrate_g": 42,
-      "fat_g": 5,
-      "fiber_g": 0.6,
+      "carbohydrate_g": 41,
+      "fat_g": 4.5,
+      "fiber_g": 0.5,
       "salt_g": 0.8
     },
-    "recipe": "Brown orzo in butter, add washed rice, stir, add hot water and salt. Cook on low heat 15 min, rest 10 min."
+    "recipe": "Rinse rice, sauté in butter, add hot water and salt. Cook on low heat 15 min, rest 10 min."
   },
   "bulgur pilavı": {
     "name": "Bulgur Pilavı (Bulgur Pilaf)",
-    "category": "Side",
+    "category": "Rice / Pasta",
     "photo": "photos/bulgur-pilavi.jpg",
     "ingredients": [
       "bulgur",
@@ -360,7 +359,7 @@
   },
   "makarna": {
     "name": "Makarna (Pasta)",
-    "category": "Side",
+    "category": "Rice / Pasta",
     "photo": "photos/makarna.jpg",
     "ingredients": [
       "pasta",
@@ -387,7 +386,7 @@
   },
   "cacık": {
     "name": "Cacık (Yogurt with Cucumber)",
-    "category": "Extra",
+    "category": "Salad",
     "photo": "photos/cacik.jpg",
     "ingredients": [
       "yogurt",
@@ -417,7 +416,7 @@
   },
   "sütlaç": {
     "name": "Sütlaç (Rice Pudding)",
-    "category": "Extra",
+    "category": "Dessert / Fruit",
     "photo": "photos/sutlac.jpg",
     "ingredients": [
       "milk",
@@ -446,7 +445,7 @@
   },
   "mevsim meyvesi": {
     "name": "Mevsim Meyvesi (Seasonal Fruit)",
-    "category": "Extra",
+    "category": "Dessert / Fruit",
     "photo": "photos/mevsim-meyvesi.jpg",
     "ingredients": [
       "seasonal fruit (apple, orange or mandarin)"
@@ -467,5 +466,683 @@
       "salt_g": 0
     },
     "recipe": "Washed and served fresh."
+  },
+  "domates çorba": {
+    "name": "Domates Çorbası (Tomato Soup)",
+    "category": "Soup",
+    "photo": "photos/domates-corbasi.jpg",
+    "ingredients": [
+      "tomato",
+      "tomato paste",
+      "flour",
+      "butter",
+      "milk",
+      "salt"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 130,
+      "protein_g": 3,
+      "carbohydrate_g": 16,
+      "fat_g": 6,
+      "fiber_g": 1.5,
+      "salt_g": 1.0
+    },
+    "recipe": "Cook flour in butter, add tomato paste and grated tomato, then water. Simmer 20 min, add milk and season."
+  },
+  "mantar çorba": {
+    "name": "Mantar Çorbası (Cream of Mushroom Soup)",
+    "category": "Soup",
+    "photo": "photos/mantar-corbasi.jpg",
+    "ingredients": [
+      "mushrooms",
+      "onion",
+      "flour",
+      "butter",
+      "milk",
+      "cream",
+      "salt",
+      "black pepper"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 150,
+      "protein_g": 4,
+      "carbohydrate_g": 14,
+      "fat_g": 9,
+      "fiber_g": 1.5,
+      "salt_g": 1.1
+    },
+    "recipe": "Sauté onion and sliced mushrooms in butter, stir in flour, add water and milk. Simmer 15 min, finish with cream."
+  },
+  "tarhana çorba": {
+    "name": "Tarhana Çorbası",
+    "category": "Soup",
+    "photo": "photos/tarhana-corbasi.jpg",
+    "ingredients": [
+      "tarhana (dried yogurt & flour mix)",
+      "tomato paste",
+      "butter",
+      "water",
+      "dried mint",
+      "salt"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 140,
+      "protein_g": 5,
+      "carbohydrate_g": 22,
+      "fat_g": 3.5,
+      "fiber_g": 2,
+      "salt_g": 1.3
+    },
+    "recipe": "Soak tarhana in water, cook with tomato paste and butter for 15 min while stirring. Finish with mint."
+  },
+  "tavuk çorba": {
+    "name": "Tavuk Çorbası (Chicken Soup)",
+    "category": "Soup",
+    "photo": "photos/tavuk-corbasi.jpg",
+    "ingredients": [
+      "chicken",
+      "vermicelli",
+      "carrot",
+      "flour",
+      "butter",
+      "lemon juice",
+      "salt"
+    ],
+    "labels": [],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 145,
+      "protein_g": 10,
+      "carbohydrate_g": 14,
+      "fat_g": 5,
+      "fiber_g": 0.8,
+      "salt_g": 1.2
+    },
+    "recipe": "Boil chicken, shred the meat. Cook vermicelli and carrot in the stock, thicken with flour and butter, add lemon."
+  },
+  "mısır çorba": {
+    "name": "Mısır Çorbası (Corn Soup)",
+    "category": "Soup",
+    "photo": "photos/misir-corbasi.jpg",
+    "ingredients": [
+      "sweet corn",
+      "onion",
+      "flour",
+      "butter",
+      "milk",
+      "salt"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 160,
+      "protein_g": 4,
+      "carbohydrate_g": 24,
+      "fat_g": 5.5,
+      "fiber_g": 2,
+      "salt_g": 1.0
+    },
+    "recipe": "Sauté onion in butter, add flour and corn, then water and milk. Simmer 20 min and partly blend."
+  },
+  "tavuklu patates": {
+    "name": "Tavuklu Patates (Chicken with Potatoes)",
+    "category": "Main",
+    "photo": "photos/tavuklu-patates.jpg",
+    "ingredients": [
+      "chicken thigh",
+      "potato",
+      "onion",
+      "green pepper",
+      "tomato paste",
+      "sunflower oil",
+      "salt"
+    ],
+    "labels": [
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 300,
+      "protein_g": 20,
+      "carbohydrate_g": 24,
+      "fat_g": 14,
+      "fiber_g": 3,
+      "salt_g": 1.3
+    },
+    "recipe": "Brown diced chicken, add onion, pepper and tomato paste, then potato cubes and water. Cook 30 min."
+  },
+  "patlıcan kebabı": {
+    "name": "Patlıcan Kebabı (Eggplant Kebab)",
+    "category": "Main",
+    "photo": "photos/patlican-kebabi.jpg",
+    "ingredients": [
+      "eggplant",
+      "minced beef",
+      "tomato",
+      "green pepper",
+      "onion",
+      "sunflower oil",
+      "salt"
+    ],
+    "labels": [
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 330,
+      "protein_g": 16,
+      "carbohydrate_g": 12,
+      "fat_g": 25,
+      "fiber_g": 5,
+      "salt_g": 1.4
+    },
+    "recipe": "Alternate meatballs and eggplant slices in a tray, top with tomato and pepper. Bake 40 min at 190 °C."
+  },
+  "çıtır tavuk / elma dilim patates": {
+    "name": "Çıtır Tavuk & Elma Dilim Patates (Crispy Chicken with Potato Wedges)",
+    "category": "Main",
+    "photo": "photos/citir-tavuk.jpg",
+    "ingredients": [
+      "chicken breast",
+      "flour",
+      "egg",
+      "breadcrumbs",
+      "corn flakes",
+      "potato",
+      "sunflower oil",
+      "spices"
+    ],
+    "labels": [],
+    "allergens": [
+      "gluten",
+      "egg"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 480,
+      "protein_g": 28,
+      "carbohydrate_g": 42,
+      "fat_g": 22,
+      "fiber_g": 3,
+      "salt_g": 1.6
+    },
+    "recipe": "Coat chicken strips in flour, egg and crumbs, fry until golden. Season potato wedges and bake 30 min."
+  },
+  "tas kebabı": {
+    "name": "Tas Kebabı (Beef Stew)",
+    "category": "Main",
+    "photo": "photos/tas-kebabi.jpg",
+    "ingredients": [
+      "beef cubes",
+      "onion",
+      "tomato paste",
+      "butter",
+      "black pepper",
+      "salt"
+    ],
+    "labels": [
+      "gluten-free"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 200,
+      "energy_kcal": 320,
+      "protein_g": 24,
+      "carbohydrate_g": 6,
+      "fat_g": 22,
+      "fiber_g": 1.5,
+      "salt_g": 1.3
+    },
+    "recipe": "Brown beef in butter, add onion and tomato paste, cover with water and cook 75 min until tender."
+  },
+  "tavuk kavurma": {
+    "name": "Tavuk Kavurma (Sautéed Chicken)",
+    "category": "Main",
+    "photo": "photos/tavuk-kavurma.jpg",
+    "ingredients": [
+      "chicken thigh",
+      "onion",
+      "green pepper",
+      "tomato",
+      "sunflower oil",
+      "salt",
+      "thyme"
+    ],
+    "labels": [
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 200,
+      "energy_kcal": 290,
+      "protein_g": 26,
+      "carbohydrate_g": 5,
+      "fat_g": 18,
+      "fiber_g": 1.5,
+      "salt_g": 1.3
+    },
+    "recipe": "Sear chicken pieces on high heat, add onion, peppers and tomato. Cook 20 min."
+  },
+  "şehriyeli pirinç pilavı": {
+    "name": "Şehriyeli Pirinç Pilavı (Rice with Orzo)",
+    "category": "Rice / Pasta",
+    "photo": "photos/sehriyeli-pilav.jpg",
+    "ingredients": [
+      "rice",
+      "orzo",
+      "butter",
+      "water",
+      "salt"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 230,
+      "protein_g": 4,
+      "carbohydrate_g": 42,
+      "fat_g": 5,
+      "fiber_g": 0.6,
+      "salt_g": 0.8
+    },
+    "recipe": "Brown orzo in butter, add washed rice, stir, add hot water and salt. Cook 15 min, rest 10 min."
+  },
+  "pesto soslu makarna": {
+    "name": "Pesto Soslu Makarna (Pasta with Pesto)",
+    "category": "Rice / Pasta",
+    "photo": "photos/pesto-makarna.jpg",
+    "ingredients": [
+      "pasta",
+      "basil",
+      "olive oil",
+      "parmesan",
+      "walnuts",
+      "garlic",
+      "salt"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk",
+      "nuts"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 200,
+      "energy_kcal": 380,
+      "protein_g": 11,
+      "carbohydrate_g": 52,
+      "fat_g": 14,
+      "fiber_g": 3,
+      "salt_g": 1.0
+    },
+    "recipe": "Blend basil, garlic, walnuts, parmesan and olive oil. Toss with freshly boiled pasta."
+  },
+  "domatesli bulgur pilavı": {
+    "name": "Domatesli Bulgur Pilavı (Bulgur with Tomato)",
+    "category": "Rice / Pasta",
+    "photo": "photos/domatesli-bulgur.jpg",
+    "ingredients": [
+      "bulgur",
+      "tomato",
+      "tomato paste",
+      "onion",
+      "olive oil",
+      "salt"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 200,
+      "protein_g": 5.5,
+      "carbohydrate_g": 36,
+      "fat_g": 4.5,
+      "fiber_g": 6,
+      "salt_g": 0.9
+    },
+    "recipe": "Sauté onion in oil with tomato and paste, add bulgur and hot water. Cook 15 min, rest 10 min."
+  },
+  "bezelye yemeği": {
+    "name": "Bezelye Yemeği (Pea Stew)",
+    "category": "Vegetable dish",
+    "photo": "photos/bezelye.jpg",
+    "ingredients": [
+      "peas",
+      "carrot",
+      "potato",
+      "onion",
+      "tomato paste",
+      "olive oil",
+      "salt"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 190,
+      "protein_g": 8,
+      "carbohydrate_g": 24,
+      "fat_g": 7,
+      "fiber_g": 8,
+      "salt_g": 1.0
+    },
+    "recipe": "Sauté onion with tomato paste, add peas, carrot and potato with water. Simmer 30 min."
+  },
+  "nohutlu kabak çiltme": {
+    "name": "Nohutlu Kabak Çiltme (Zucchini with Chickpeas)",
+    "category": "Vegetable dish",
+    "photo": "photos/kabak-ciltme.jpg",
+    "ingredients": [
+      "zucchini",
+      "chickpeas",
+      "onion",
+      "tomato",
+      "olive oil",
+      "salt",
+      "red pepper flakes"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 200,
+      "protein_g": 8,
+      "carbohydrate_g": 22,
+      "fat_g": 9,
+      "fiber_g": 7,
+      "salt_g": 1.0
+    },
+    "recipe": "Sauté onion in olive oil, add zucchini cubes, cooked chickpeas and tomato. Cook 20 min."
+  },
+  "yaz türlüsü": {
+    "name": "Yaz Türlüsü (Summer Vegetable Stew)",
+    "category": "Vegetable dish",
+    "photo": "photos/yaz-turlusu.jpg",
+    "ingredients": [
+      "eggplant",
+      "zucchini",
+      "green beans",
+      "potato",
+      "tomato",
+      "green pepper",
+      "onion",
+      "olive oil"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 180,
+      "protein_g": 4,
+      "carbohydrate_g": 18,
+      "fat_g": 10,
+      "fiber_g": 6,
+      "salt_g": 1.0
+    },
+    "recipe": "Layer the chopped vegetables in a pot with olive oil and tomato. Cook on low heat for 45 min."
+  },
+  "karışık kızartma": {
+    "name": "Karışık Kızartma (Fried Vegetables with Yogurt)",
+    "category": "Vegetable dish",
+    "photo": "photos/karisik-kizartma.jpg",
+    "ingredients": [
+      "eggplant",
+      "zucchini",
+      "green pepper",
+      "potato",
+      "sunflower oil",
+      "yogurt",
+      "garlic"
+    ],
+    "labels": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 340,
+      "protein_g": 6,
+      "carbohydrate_g": 26,
+      "fat_g": 24,
+      "fiber_g": 5,
+      "salt_g": 1.0
+    },
+    "recipe": "Fry sliced vegetables until golden, drain. Serve with garlic yogurt."
+  },
+  "açık büfe salata": {
+    "name": "Açık Büfe Salata (Salad Bar)",
+    "category": "Salad",
+    "photo": "photos/salata.jpg",
+    "ingredients": [
+      "lettuce",
+      "tomato",
+      "cucumber",
+      "carrot",
+      "red cabbage",
+      "sweet corn",
+      "olive oil",
+      "lemon"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 90,
+      "protein_g": 2,
+      "carbohydrate_g": 9,
+      "fat_g": 5.5,
+      "fiber_g": 3,
+      "salt_g": 0.5
+    },
+    "recipe": "Self-service salad bar. Values are for a standard bowl with olive oil and lemon dressing."
+  },
+  "tarçınlı irmik pudingi": {
+    "name": "Tarçınlı İrmik Pudingi (Semolina Pudding with Cinnamon)",
+    "category": "Dessert / Fruit",
+    "photo": "photos/irmik-pudingi.jpg",
+    "ingredients": [
+      "milk",
+      "semolina",
+      "sugar",
+      "butter",
+      "cinnamon",
+      "vanilla"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 210,
+      "protein_g": 5.5,
+      "carbohydrate_g": 34,
+      "fat_g": 6,
+      "fiber_g": 0.5,
+      "salt_g": 0.2
+    },
+    "recipe": "Cook semolina in milk with sugar and butter until thick. Chill and sprinkle with cinnamon."
+  },
+  "kiraz": {
+    "name": "Kiraz (Cherries)",
+    "category": "Dessert / Fruit",
+    "photo": "photos/kiraz.jpg",
+    "ingredients": [
+      "fresh cherries"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 95,
+      "protein_g": 1.6,
+      "carbohydrate_g": 24,
+      "fat_g": 0.3,
+      "fiber_g": 3,
+      "salt_g": 0
+    },
+    "recipe": "Washed and served fresh."
+  },
+  "profiterol": {
+    "name": "Profiterol",
+    "category": "Dessert / Fruit",
+    "photo": "photos/profiterol.jpg",
+    "ingredients": [
+      "flour",
+      "egg",
+      "butter",
+      "milk",
+      "sugar",
+      "cocoa",
+      "cream",
+      "dark chocolate"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "egg",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 120,
+      "energy_kcal": 360,
+      "protein_g": 6,
+      "carbohydrate_g": 38,
+      "fat_g": 20,
+      "fiber_g": 1,
+      "salt_g": 0.3
+    },
+    "recipe": "Bake choux pastry balls, fill with vanilla cream and cover with chocolate sauce."
+  },
+  "elma": {
+    "name": "Elma (Apple)",
+    "category": "Dessert / Fruit",
+    "photo": "photos/elma.jpg",
+    "ingredients": [
+      "fresh apple"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 80,
+      "protein_g": 0.4,
+      "carbohydrate_g": 21,
+      "fat_g": 0.3,
+      "fiber_g": 3.6,
+      "salt_g": 0
+    },
+    "recipe": "Washed and served fresh."
+  },
+  "kadayıf": {
+    "name": "Kadayıf (Shredded Pastry Dessert)",
+    "category": "Dessert / Fruit",
+    "photo": "photos/kadayif.jpg",
+    "ingredients": [
+      "shredded pastry (tel kadayıf)",
+      "butter",
+      "sugar syrup",
+      "walnuts"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk",
+      "nuts"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 100,
+      "energy_kcal": 380,
+      "protein_g": 5,
+      "carbohydrate_g": 52,
+      "fat_g": 17,
+      "fiber_g": 1.5,
+      "salt_g": 0.2
+    },
+    "recipe": "Layer buttered kadayıf with walnuts, bake until golden and pour over cooled syrup."
   }
 }

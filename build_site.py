@@ -5,6 +5,7 @@ and when opened directly from the computer.
 """
 import json
 from datetime import datetime
+from html import escape
 
 TEMPLATE = r"""<!DOCTYPE html>
 <html lang="en">
@@ -68,8 +69,9 @@ a{color:var(--green)}
 <body>
 <header><div class="wrap">
   <h1>🍽️ Smart Meal Guide</h1>
-  <p>Weekly cafeteria menu with photos, ingredients, dietary labels, nutrition facts, allergens and recipes.</p>
-  <div class="updated">Menu automatically updated: __UPDATED__</div>
+  <p><b>__CAFETERIA__</b></p>
+  <p>Weekly menu with photos, ingredients, dietary labels, nutrition facts, allergens and recipes.</p>
+  <div class="updated">Week: __WEEK__ · Menu automatically pulled from the cafeteria website · Updated: __UPDATED__</div>
 </div></header>
 
 <main class="wrap">
@@ -88,7 +90,7 @@ a{color:var(--green)}
 <section class="about"><div class="wrap cols">
   <div>
     <h2>About the project</h2>
-    <p>Smart Meal Guide pulls the cafeteria menu automatically from the institution's website. Every dish is matched with our dish database and shown with its photo, ingredients, dietary labels, nutrition facts per portion, allergen warnings and an estimated recipe. New dishes that are not in the database yet are flagged for completion.</p>
+    <p>Smart Meal Guide pulls the weekly menu of the <b>__CAFETERIA__</b> automatically from the university website (menu PDF). Every dish is matched with our dish database and shown with its photo, ingredients, dietary labels, nutrition facts per portion, allergen warnings and an estimated recipe. New dishes that are not in the database yet are flagged for completion.</p>
   </div>
   <div>
     <h2>Nutrition data</h2>
@@ -99,13 +101,14 @@ a{color:var(--green)}
     <p>__TEAM__</p>
     <p>GMS 4039 Information Technologies – Group Project, Option 4</p>
     <p><a href="https://github.com/Ataking007/smart-meal-guide">Source code on GitHub</a></p>
+    <p style="font-size:.8rem;color:#66706c">Menu source: __SOURCE__</p>
   </div>
 </div></section>
 <footer>Smart Meal Guide · 2026</footer>
 
 <script>
 const MENU = __MENU__;
-const ICON = {Soup:"🍲",Main:"🍛",Side:"🍚",Extra:"🥗"};
+const ICON = {"Soup":"🍲","Main":"🍗","Rice / Pasta":"🍚","Vegetable dish":"🥘","Salad":"🥗","Dessert / Fruit":"🍮"};
 const LABEL = {"vegan":"🌱 Vegan","vegetarian":"🥕 Vegetarian","gluten-free":"🌾 Gluten-free"};
 const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 let current = 0, filter = "all";
@@ -116,7 +119,7 @@ function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;","
 function card(d){
   if(d.missing){
     return `<div class="card missing" data-labels=""><div class="photo">❓</div><div class="body">
-      <div class="cat">New dish</div><h3>${esc(d.name)}</h3>
+      <div class="cat">${esc(d.category||"New dish")}</div><h3>${esc(d.name)}</h3>
       <div class="flag">⚠️ Not in the database yet – flagged for completion. Photo, labels and nutrition will be added.</div></div></div>`;
   }
   const n=d.nutrition_per_portion;
@@ -192,9 +195,14 @@ render();
 TEAM = "Özlem Yılmaz<br>Vahdet Can Şahiner<br>Atahan Arslan"
 
 
-def build_page(menu: list[dict]) -> str:
+def build_page(menu: list[dict], cafeteria: str = "Cafeteria", source: str = "") -> str:
     data = json.dumps(menu, ensure_ascii=False).replace("</", "<\\/")
+    dates = [d["date"] for d in menu if d.get("date")]
+    week = f"{dates[0]} – {dates[-1]}" if dates else ""
     return (TEMPLATE
             .replace("__MENU__", data)
             .replace("__UPDATED__", datetime.now().strftime("%d.%m.%Y %H:%M"))
-            .replace("__TEAM__", TEAM))
+            .replace("__TEAM__", TEAM)
+            .replace("__CAFETERIA__", escape(cafeteria))
+            .replace("__SOURCE__", escape(source))
+            .replace("__WEEK__", week))
