@@ -1,7 +1,9 @@
 # Smart Meal Guide 🍽️
 
 **GMS 4039 Information Technologies – Group Project, Option 4**
-**Status:** Draft version (17.11.2026)
+**Status:** Working version (24.11.2026)
+
+🌐 **Live website:** https://ataking007.github.io/smart-meal-guide/
 
 A digital guide for a staff/student cafeteria. The daily/weekly menu is pulled
 automatically from the institution's website, and every dish is enriched with a
@@ -10,12 +12,11 @@ facts table per portion, allergen warnings and an estimated recipe.
 
 ## Team
 
-| Name | Student No | Role |
-|------|-----------|------|
-| Özlem Yılmaz | _No_ | Development (scraper / automation) |
-| Vahdet Can Şahiner  | _No_ | Dish database, nutrition (TürKomp) |
-| Atahan Arslan | _No_ | Photos & interface design |
-
+| Name | Role |
+|------|------|
+| Özlem Yılmaz | Dish database, nutrition (TürKomp) |
+| Vahdet Can Şahiner | Photos, interface, testing & survey |
+| Atahan Arslan | Development (scraper / automation), report & video |
 
 ## How it works
 
@@ -36,13 +37,13 @@ Cafeteria website ──► scraper.py ──► enrich.py ──► build_site.
 
 | Requirement | Status |
 |---|---|
-| Automated menu retrieval from website | 🟡 Prototype (parser works on sample page, real URL to be added) |
+| Automated menu retrieval from website | 🟡 Working on sample week menu, real cafeteria URL to be connected |
 | Photo library (2 weeks of dishes) | 🔴 Photographing starts this week |
-| Ingredients for each dish | 🟡 3 sample dishes done |
-| Dietary labels (vegan / vegetarian / gluten-free) | 🟢 Implemented |
-| Calories + nutrition table per portion (TürKomp) | 🟡 3 sample dishes done |
+| Ingredients for each dish | 🟡 16 dishes done |
+| Dietary labels (vegan / vegetarian / gluten-free) | 🟢 Implemented, with filters on the website |
+| Calories + nutrition table per portion (TürKomp) | 🟡 16 dishes done (estimates, being checked with TürKomp) |
 | Allergen warnings | 🟢 Implemented |
-| Estimated recipe | 🟡 3 sample dishes done |
+| Estimated recipe | 🟡 16 dishes done |
 | Full automation + flagging new dishes | 🟢 Implemented (prototype) |
 
 ## Run it
@@ -52,7 +53,7 @@ pip install -r requirements.txt
 python main.py            # uses the URL in config.json
 python main.py --sample   # offline demo with sample_menu.html
 ```
-Then open `index.html` in a browser.
+This regenerates `index.html`, the website published with GitHub Pages.
 
 ## Project structure
 
@@ -61,7 +62,8 @@ Then open `index.html` in a browser.
 | `main.py` | runs the whole pipeline |
 | `scraper.py` | automated menu retrieval |
 | `enrich.py` | matches dishes with the database, flags missing ones |
-| `build_site.py` | generates the guide page |
+| `build_site.py` | generates the website (`index.html`) |
+| `index.html` | the website (GitHub Pages) |
 | `dishes.json` | dish database |
 | `sample_menu.html` | sample menu page for testing |
 | `config.json` | cafeteria menu URL |
@@ -74,8 +76,8 @@ Dish photos will be added in a `photos/` folder.
 | Date | Task |
 |---|---|
 | 10.11 – 22.11.2026 | App design and development |
-| **17.11.2026** | **Draft program on GitHub** ✅ |
-| 24.11.2026 | Completed program (GitHub link) |
+| 17.11.2026 | Draft program on GitHub ✅ |
+| **24.11.2026** | **Completed program + live website** ✅ |
 | 23.11 – 29.11.2026 | User testing with 20 participants |
 | 01.12.2026 | Survey results |
 | 30.11 – 07.12.2026 | Data analysis, report and documentary video |

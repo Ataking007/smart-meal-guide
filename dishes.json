@@ -1,29 +1,471 @@
 {
   "mercimek çorbası": {
     "name": "Mercimek Çorbası (Red Lentil Soup)",
+    "category": "Soup",
     "photo": "photos/mercimek-corbasi.jpg",
-    "ingredients": ["red lentils", "onion", "carrot", "potato", "butter", "flour", "salt", "cumin"],
-    "labels": ["vegetarian"],
-    "allergens": ["gluten", "milk"],
-    "nutrition_per_portion": {"portion_g": 250, "energy_kcal": 165, "protein_g": 8.5, "carbohydrate_g": 24.0, "fat_g": 4.0, "fiber_g": 4.5, "salt_g": 1.1},
+    "ingredients": [
+      "red lentils",
+      "onion",
+      "carrot",
+      "potato",
+      "butter",
+      "flour",
+      "salt",
+      "cumin"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 165,
+      "protein_g": 8.5,
+      "carbohydrate_g": 24,
+      "fat_g": 4,
+      "fiber_g": 4.5,
+      "salt_g": 1.1
+    },
     "recipe": "Sauté onion in butter, add flour, then lentils, carrot, potato and water. Boil 30 min, blend, season with salt and cumin."
+  },
+  "ezogelin çorbası": {
+    "name": "Ezogelin Çorbası (Lentil & Bulgur Soup)",
+    "category": "Soup",
+    "photo": "photos/ezogelin-corbasi.jpg",
+    "ingredients": [
+      "red lentils",
+      "bulgur",
+      "rice",
+      "onion",
+      "tomato paste",
+      "pepper paste",
+      "butter",
+      "dried mint"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 170,
+      "protein_g": 7,
+      "carbohydrate_g": 27,
+      "fat_g": 4,
+      "fiber_g": 5,
+      "salt_g": 1.1
+    },
+    "recipe": "Sauté onion in butter with tomato and pepper paste, add lentils, bulgur, rice and water. Simmer 35 min, finish with dried mint."
+  },
+  "yayla çorbası": {
+    "name": "Yayla Çorbası (Yogurt & Rice Soup)",
+    "category": "Soup",
+    "photo": "photos/yayla-corbasi.jpg",
+    "ingredients": [
+      "yogurt",
+      "rice",
+      "egg yolk",
+      "flour",
+      "butter",
+      "dried mint",
+      "salt"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk",
+      "egg",
+      "gluten"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 150,
+      "protein_g": 6,
+      "carbohydrate_g": 18,
+      "fat_g": 6,
+      "fiber_g": 0.5,
+      "salt_g": 1.0
+    },
+    "recipe": "Boil rice. Whisk yogurt, egg yolk and flour, temper with hot stock and add to the pot. Finish with mint sizzled in butter."
+  },
+  "domates çorbası": {
+    "name": "Domates Çorbası (Tomato Soup)",
+    "category": "Soup",
+    "photo": "photos/domates-corbasi.jpg",
+    "ingredients": [
+      "tomato",
+      "tomato paste",
+      "flour",
+      "butter",
+      "milk",
+      "salt"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 130,
+      "protein_g": 3,
+      "carbohydrate_g": 16,
+      "fat_g": 6,
+      "fiber_g": 1.5,
+      "salt_g": 1.0
+    },
+    "recipe": "Cook flour in butter, add tomato paste and grated tomato, then water. Simmer 20 min, add milk and season."
   },
   "kuru fasulye": {
     "name": "Kuru Fasulye (White Bean Stew)",
+    "category": "Main",
     "photo": "photos/kuru-fasulye.jpg",
-    "ingredients": ["dried white beans", "onion", "tomato paste", "olive oil", "salt", "pepper"],
-    "labels": ["vegan", "vegetarian", "gluten-free"],
+    "ingredients": [
+      "dried white beans",
+      "onion",
+      "tomato paste",
+      "olive oil",
+      "salt",
+      "black pepper"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian",
+      "gluten-free"
+    ],
     "allergens": [],
-    "nutrition_per_portion": {"portion_g": 250, "energy_kcal": 240, "protein_g": 13.0, "carbohydrate_g": 35.0, "fat_g": 6.0, "fiber_g": 11.0, "salt_g": 1.2},
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 240,
+      "protein_g": 13,
+      "carbohydrate_g": 35,
+      "fat_g": 6,
+      "fiber_g": 11,
+      "salt_g": 1.2
+    },
     "recipe": "Soak beans overnight. Sauté onion in oil, add tomato paste, beans and water. Simmer 60–90 min until soft."
+  },
+  "tavuk sote": {
+    "name": "Tavuk Sote (Chicken Sauté)",
+    "category": "Main",
+    "photo": "photos/tavuk-sote.jpg",
+    "ingredients": [
+      "chicken breast",
+      "green pepper",
+      "tomato",
+      "onion",
+      "sunflower oil",
+      "salt",
+      "thyme"
+    ],
+    "labels": [
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 200,
+      "energy_kcal": 260,
+      "protein_g": 26,
+      "carbohydrate_g": 8,
+      "fat_g": 14,
+      "fiber_g": 2,
+      "salt_g": 1.3
+    },
+    "recipe": "Sear diced chicken in oil, add onion and peppers, then tomato. Cook 20 min and season with thyme."
+  },
+  "sebzeli türlü": {
+    "name": "Sebzeli Türlü (Vegetable Stew)",
+    "category": "Main",
+    "photo": "photos/sebzeli-turlu.jpg",
+    "ingredients": [
+      "eggplant",
+      "zucchini",
+      "green beans",
+      "potato",
+      "tomato",
+      "green pepper",
+      "onion",
+      "olive oil"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 180,
+      "protein_g": 4,
+      "carbohydrate_g": 18,
+      "fat_g": 10,
+      "fiber_g": 6,
+      "salt_g": 1.0
+    },
+    "recipe": "Layer the chopped vegetables in a pot with olive oil and tomato. Cook on low heat for 45 min."
+  },
+  "karnıyarık": {
+    "name": "Karnıyarık (Stuffed Eggplant)",
+    "category": "Main",
+    "photo": "photos/karniyarik.jpg",
+    "ingredients": [
+      "eggplant",
+      "minced beef",
+      "onion",
+      "tomato",
+      "green pepper",
+      "garlic",
+      "sunflower oil"
+    ],
+    "labels": [
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 320,
+      "protein_g": 15,
+      "carbohydrate_g": 14,
+      "fat_g": 23,
+      "fiber_g": 5,
+      "salt_g": 1.3
+    },
+    "recipe": "Fry the eggplants, split them open and fill with sautéed minced beef, onion and tomato. Bake 25 min at 180 °C."
+  },
+  "izmir köfte": {
+    "name": "İzmir Köfte (Meatballs with Potatoes)",
+    "category": "Main",
+    "photo": "photos/izmir-kofte.jpg",
+    "ingredients": [
+      "minced beef",
+      "potato",
+      "tomato",
+      "green pepper",
+      "onion",
+      "breadcrumbs",
+      "egg"
+    ],
+    "labels": [],
+    "allergens": [
+      "gluten",
+      "egg"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 340,
+      "protein_g": 18,
+      "carbohydrate_g": 20,
+      "fat_g": 21,
+      "fiber_g": 3,
+      "salt_g": 1.5
+    },
+    "recipe": "Shape meatballs with onion, breadcrumbs and egg, brown them. Bake with potato wedges, peppers and tomato sauce for 35 min."
+  },
+  "nohut yemeği": {
+    "name": "Nohut Yemeği (Chickpea Stew)",
+    "category": "Main",
+    "photo": "photos/nohut-yemegi.jpg",
+    "ingredients": [
+      "chickpeas",
+      "onion",
+      "tomato paste",
+      "olive oil",
+      "salt",
+      "red pepper flakes"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 250,
+      "energy_kcal": 260,
+      "protein_g": 12,
+      "carbohydrate_g": 34,
+      "fat_g": 8,
+      "fiber_g": 9,
+      "salt_g": 1.2
+    },
+    "recipe": "Soak chickpeas overnight. Sauté onion with tomato paste, add chickpeas and water, simmer 60 min."
   },
   "pirinç pilavı": {
     "name": "Pirinç Pilavı (Rice Pilaf)",
+    "category": "Side",
     "photo": "photos/pirinc-pilavi.jpg",
-    "ingredients": ["rice", "butter", "orzo", "water", "salt"],
-    "labels": ["vegetarian"],
-    "allergens": ["gluten", "milk"],
-    "nutrition_per_portion": {"portion_g": 150, "energy_kcal": 230, "protein_g": 4.0, "carbohydrate_g": 42.0, "fat_g": 5.0, "fiber_g": 0.6, "salt_g": 0.8},
+    "ingredients": [
+      "rice",
+      "butter",
+      "orzo",
+      "water",
+      "salt"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 230,
+      "protein_g": 4,
+      "carbohydrate_g": 42,
+      "fat_g": 5,
+      "fiber_g": 0.6,
+      "salt_g": 0.8
+    },
     "recipe": "Brown orzo in butter, add washed rice, stir, add hot water and salt. Cook on low heat 15 min, rest 10 min."
+  },
+  "bulgur pilavı": {
+    "name": "Bulgur Pilavı (Bulgur Pilaf)",
+    "category": "Side",
+    "photo": "photos/bulgur-pilavi.jpg",
+    "ingredients": [
+      "bulgur",
+      "onion",
+      "tomato paste",
+      "butter",
+      "water",
+      "salt"
+    ],
+    "labels": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 210,
+      "protein_g": 6,
+      "carbohydrate_g": 38,
+      "fat_g": 4,
+      "fiber_g": 6,
+      "salt_g": 0.8
+    },
+    "recipe": "Sauté onion in butter with tomato paste, add bulgur and hot water. Cook 15 min, rest 10 min."
+  },
+  "makarna": {
+    "name": "Makarna (Pasta)",
+    "category": "Side",
+    "photo": "photos/makarna.jpg",
+    "ingredients": [
+      "pasta",
+      "sunflower oil",
+      "salt"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 220,
+      "protein_g": 7,
+      "carbohydrate_g": 40,
+      "fat_g": 3.5,
+      "fiber_g": 2,
+      "salt_g": 0.7
+    },
+    "recipe": "Boil pasta in salted water for 8–10 min, drain and toss with a little oil."
+  },
+  "cacık": {
+    "name": "Cacık (Yogurt with Cucumber)",
+    "category": "Extra",
+    "photo": "photos/cacik.jpg",
+    "ingredients": [
+      "yogurt",
+      "cucumber",
+      "garlic",
+      "dried mint",
+      "water",
+      "salt"
+    ],
+    "labels": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 75,
+      "protein_g": 4.5,
+      "carbohydrate_g": 6,
+      "fat_g": 3.5,
+      "fiber_g": 0.5,
+      "salt_g": 0.6
+    },
+    "recipe": "Mix yogurt with water, grated cucumber, garlic and salt. Serve cold with mint."
+  },
+  "sütlaç": {
+    "name": "Sütlaç (Rice Pudding)",
+    "category": "Extra",
+    "photo": "photos/sutlac.jpg",
+    "ingredients": [
+      "milk",
+      "rice",
+      "sugar",
+      "rice flour",
+      "vanilla"
+    ],
+    "labels": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 190,
+      "protein_g": 5,
+      "carbohydrate_g": 32,
+      "fat_g": 4.5,
+      "fiber_g": 0.2,
+      "salt_g": 0.2
+    },
+    "recipe": "Cook rice in water, add milk and sugar, thicken with rice flour. Bake briefly until golden, chill."
+  },
+  "mevsim meyvesi": {
+    "name": "Mevsim Meyvesi (Seasonal Fruit)",
+    "category": "Extra",
+    "photo": "photos/mevsim-meyvesi.jpg",
+    "ingredients": [
+      "seasonal fruit (apple, orange or mandarin)"
+    ],
+    "labels": [
+      "vegan",
+      "vegetarian",
+      "gluten-free"
+    ],
+    "allergens": [],
+    "nutrition_per_portion": {
+      "portion_g": 150,
+      "energy_kcal": 80,
+      "protein_g": 0.5,
+      "carbohydrate_g": 20,
+      "fat_g": 0.3,
+      "fiber_g": 3,
+      "salt_g": 0
+    },
+    "recipe": "Washed and served fresh."
   }
 }

@@ -36,7 +36,6 @@ estimated recipe.
 ## 5. Task distribution
 | Member | Task |
 |---|---|
-| Özlem Yılmaz | Scraper and automation |
-| Vahdet Can Şahiner | Dish database and nutrition calculation |
-| Atahan Arslan | Photos and interface |
-| _Name_ | Testing, survey, report and video |
+| Özlem Yılmaz | Dish database and nutrition calculation |
+| Vahdet Can Şahiner | Photos, interface, testing and survey |
+| Atahan Arslan | Scraper, automation, report and video |

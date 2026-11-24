@@ -3,6 +3,8 @@ import json
 
 
 def normalize(name: str) -> str:
+    # Turkish-aware lowercase (İ -> i, I -> ı)
+    name = name.replace("İ", "i").replace("I", "ı")
     return " ".join(name.lower().split())
 
 
